@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Montserrat:ital,wght@1,100&family=Noto+Sans:ital,wght@1,700&display=swap');
+* {
+    font-family: "Noto Sans";
+}
+h2{
+    font-size:32px;
+    color:blue;
+    border-bottom:1px solid #0e0c0c
+}
+.mainspace{
+    background-color:white
+}
+
+div{
+    border: ipx solid ;
+    color:black;
+box-shadow: 8px 1px 20px 0px rgba(59, 53, 54, 0.2);/*x크기,y크기,흐림정도,번짐정도*/
+} 
+.titlebutton{
+    float:right;
+matgin-top:10px;
+}
+
+.titlebox{
+margin-top : 15px;
+
+}
+.mainbox{
+    margin:15px
+}
+.mainimg{
+
+    width:250px;
+    float:right;
+    margin:40px;
+    height:200px;
+}
+.wiki{
+    color:red;
+}
+.footer{
+    text-align:center;
+    
+}
