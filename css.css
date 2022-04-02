@@ -39,6 +39,12 @@ margin-top : 15px;
     color:red;
 }
 .footer{
-    text-align:center;
+    text-align:center;   
+}
+.categorybox{
+    width:170px;
+    float:left;
+    font-size:10px;
+    margin-bottom:60px;
     
 }
