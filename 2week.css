@@ -12,9 +12,9 @@ h2{
 }
 
 div{
-    border: ipx solid ;
+    border: 0.5px solid;
     color:black;
-box-shadow: 8px 1px 20px 0px rgba(59, 53, 54, 0.2);/*x크기,y크기,흐림정도,번짐정도*/
+box-shadow: 8px 1px 20px 0px rgba(247, 240, 241, 0.2);/*x크기,y크기,흐림정도,번짐정도*/
 } 
 .titlebutton{
     float:right;
@@ -26,7 +26,7 @@ margin-top : 15px;
 
 }
 .mainbox{
-    margin:15px;
+    margin-left:130px;
 }
 .mainimg{
 
@@ -36,9 +36,15 @@ margin-top : 15px;
     height:200px;
 }
 .wiki{
-    color:red;
+    color:blue;
 }
 .footer{
     text-align:center;
-    
+}
+.categorybox{
+    width:120px;
+font-size:15px; 
+    margin-top:40px;
+    float:left;
+    height:800px;
 }
