@@ -33,11 +33,18 @@ div {
 }
 .mainbox{
     margin: 15px;
+    margin-left: 150px;
+}
+.categorybox{
+    width: 120px;
+    height: 536px;
+    float: left;
+    font-size: 15px;
+    margin: 15px;
 }
 
 .imgSection{
     width:250px;
-    
     float: right;
     margin: 15px;
 }
