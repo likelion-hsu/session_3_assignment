@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');   
+*{
+
+ font-family: 'Noto Sans KR', sans-serif;
+text-align:center;
+}
+div{
+border:5px solid black;
+margin:25px;
+background-color:blanchedalmond;
+padding:50px;
+
+}
+.title{
+
+    font-size:60px;
+}
+.title1{
+    font-size:30px;
+}
+.result{
+    font-size:20px;
+}
+.btn-light{
+    height:70px;
+    width:300px;
+    font-size:290px;
+}
