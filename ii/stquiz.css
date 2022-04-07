@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+*{
+    font-family: "Yeon Sung";
+    text-align: center;
+}
+
+.box {
+    border: 5px solid black;
+    margin: 30px;
+    padding-bottom: 30px;
+    height: 550px;
+}
+.btn{
+    background-color: blue !important; 
+    /*!important를 사용하면 강제적으로 변환*/
+    font-size: 30px !important;
+    color:black !important;
+    width: 300px;
+}
+.test{
+    display: none;
+}
+.resultY{
+    display: none;
+}
+.resultN{
+    display: none;
+}
+.answerN{
+    font-size: 200px;
+}
+.answerY{
+    font-size: 200px;
+}

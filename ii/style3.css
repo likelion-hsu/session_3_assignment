@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+*{
+    font-family: "Black Han Sans";
+    text-align: center; /*텍스트 정렬하기(가운데)*/
+}
+div{
+   border: 3px solid black;
+   margin: 30px;
+   background-color: aquamarine; 
+   padding: 30px;
+}
+.title{
+    font-size: 60px;
+}
+.main{
+    font-size: 30px;
+}
+.result{
+    font-size: 30px;
+}
+.btn-secondary{
+    width:  300x;
+    height: 80px;
+    font-size: 60px;
+    
+}
