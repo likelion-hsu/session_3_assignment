@@ -10,8 +10,8 @@
 
 </head>
 <body>
-    <div class="box">
-        <div class="start">
+    <div>
+        <article class="start">
             <div class="titlebox">
                 <h1 class="main title mt-5 text-center">
                     간단한 퀴즈 만들기
@@ -20,30 +20,54 @@
                     우리 나라 역사에 대한 퀴즈를 맞춰보자.
                 </h3>
             </div>
-        <div class="buttonbox mt-5 ">
-            <button type="button" class="btn btn-success mt-5" onclick = 'start();'>시작하기</button>
-        </div>
-        <div class="imgbox mt-5 ">
-            <img src="korea.png" alt="태극기">
-        </div>
+         <div class="buttonbox mt-5 ">
+                <button type="button" class="btn btn-success mt-5" onclick = 'start();'>시작하기</button>
+         </div>
+          <div class="imgbox mt-5 ">
+               <img src="korea.png" alt="태극기">
+          </div>
+        </article>
         <div class="test">
             <div>
-           <h3>
+               <h3>
                임진 왜란은 1592년에 발발하였다.
-           </h3>     
+               </h3>     
             </div>
             <div>
-                <button type="button" class="btn btn-info">맞다</button>
-                <button type="button" class="btn btn-info">아니다</button>
+                <button type="button" class="btn btn-info" onclick ='right();'>맞다</button>
+                <button type="button" class="btn btn-info" onclick ='wrong();'>아니다</button>
             </div>
-        </div>
-    </div>
-    <script>
-        function start(){
-        
-        
-        $(".start").hide();
-        $(".test").show();}
+         </div>
+           <article class="correct">
+             <P>
+                 축하합니다 정답입니다.
+             </P>             
+
+            </article>
+            <article class="wrongcorrect">
+                <P>
+                 틀리셧습니다 다시한번 생각해주세요.
+                </P>             
+   
+               </article>
+    
+    
+    
+            <script>
+        function start() {
+            $(".start").hide();
+            $(".test").show(); 
+        }
+        function right(){
+            $(".test").hide();
+            $(".correct").show();
+        }
+        function wrong(){
+            
+                $(".test").hide();
+                $(".wrongcorrect").show();
+            
+        }
     </script>
     <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"

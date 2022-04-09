@@ -11,9 +11,15 @@ padding-bottom:30px;
 
 }
 .btn{
-    background-color:white !important;
+    background-color:orange !important;
 font-size:50px !important;
 }
 .test{
+    display:none;
+}
+.correct{
+    display:none;
+}
+.wrongcorrect{
     display:none;
 }
