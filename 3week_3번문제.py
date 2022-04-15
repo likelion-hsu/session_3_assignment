@@ -1,5 +1,5 @@
 # 문제 3번 - 끝말잇기 (End - Talk)
-import random
+import random # 랜덤으로 첫 번째 제시어를 추출하기 위한 random 모듈을 선언
 
 count = 0
 user = []
@@ -23,13 +23,13 @@ print(f"제시어 : [[ {before_word} ]]")
 
 while True:
     user_num = len(user)
-    i = user[count % user_num]
+    i = user[count % user_num] # user 리스트의 순서대로 진행하기 위해서 count를 0부터 1씩 더하면서 user 인원으로 나누어 index를 부여한다.
     input_word = input(f"{i} : ")
     
     if len(input_word) == 1: ## 탈락 조건 3 : 단어가 1글자일 경우
         print("2글자 이상의 단어만 사용 가능합니다.")
         print(f"** {i} 탈락 **")
-        flag = user.index(i); user.remove(i) # 탈락한 사람의 index 위치를 flag 변수에 저장하고, 탈락한 사람을 user 리스트에서 없앤다.
+        flag = user.index(i); user.remove(i) # 탈락한 사람의 index 위치를 flag 변수에 저장하고, 탈락한 사람을 user 리스트에서 없앤다. (탈락한 사람의 다음 사람부터 진행하기 위해서)
     elif before_word[-1] != input_word[0]: # 탈락 조건 1 : 이전 단어의 마지막 글자와 작성한 단어의 첫 글자가 다를 경우
         print("단어가 틀렸습니다.")
         print(f"** {i} 탈락 **")
