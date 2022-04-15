@@ -29,11 +29,11 @@ while True:
     if len(input_word) == 1: ## 탈락 조건 3 : 단어가 1글자일 경우
         print("2글자 이상의 단어만 사용 가능합니다.")
         print(f"** {i} 탈락 **")
-        flag = user.index(i); user.remove(i)
+        flag = user.index(i); user.remove(i) # 탈락한 사람의 index 위치를 flag 변수에 저장하고, 탈락한 사람을 user 리스트에서 없앤다.
     elif before_word[-1] != input_word[0]: # 탈락 조건 1 : 이전 단어의 마지막 글자와 작성한 단어의 첫 글자가 다를 경우
         print("단어가 틀렸습니다.")
         print(f"** {i} 탈락 **")
-        flag = user.index(i); user.remove(i) # 탈락한 사람을 user 리스트에서 없앤다.
+        flag = user.index(i); user.remove(i)
     elif input_word in word_data or input_word == before_word: # 탈락 조건 2 : 이미 사용된 단어일 경우
         print("이미 사용한 단어입니다.")
         print(f"** {i} 탈락 **")
@@ -42,7 +42,7 @@ while True:
     
     if len(user) == user_num-1 and len(user) != 1: # 게임을 제게하기 위한 조건 (새로운 탈락자 발생)
         word_data = [] # 새로운 게임이 열리기 때문에 입력받은 단어를 저장하는 리스트를 초기화
-        count = flag # 탈락한 유저 다음 순서부터 시작하기 위한 조건 : 탈락한 사람의 index를 저장해놨던 flag를 count 변수에 넣는다.
+        count = flag # 탈락한 사람 다음 사람에게 탈락자의 index를 부여하기 위해 count에 flag를 넣는다.
         before_word = random.choice(word_list) # 새로운 판이 시작된다. (새로운 제시어를 랜덤으로 뽑아 시작)
         print(f"제시어 : [[ {before_word} ]]")
     elif len(user) == 1: # 모두 탈락하고 user 리스트에 혼자 남게되면 게임 종료
