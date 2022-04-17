@@ -73,12 +73,16 @@ while True:
             gw = []
             gw.append(a)
             del(a)
+
             i = i % len(uns)
+
             del(x)
             del(y)
     else:
         i = (i+1) % len(uns)
 
-    if len(uns) == 1:
+    y = len(uns)
+
+    if y == 1:
         print(f"========== GAME OVER ==========\n++++ WINNER : {uns[i]} ++++")
         sys.exit()
