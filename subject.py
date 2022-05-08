@@ -1,3 +1,8 @@
+#1
+data=["카리나","윈터","닝닝","아이린","조이","예린","웬디","미연","민니","소얀","욱기","슈화"]
+for i in data: 
+    print(i)
+#2
 list= [[0 for j in range(9)] for i in range(3)]
 for i in range(3):
     list[i][0] = int(input("학번 : "))
@@ -28,3 +33,41 @@ for i in range(3):
 for i in range(3):
     print("학번 : %s 평균 : %s 학점 : %s 등수 :%s"%(list[i][0],list[i][6],list[i][7],list[i][8]))
    
+#3
+name = []
+num = int(input("인원수 입력: "))
+list= ["대나무", "무지개", "할랄", "올라프"]
+if num==0:
+        print("에러")
+        exit()
+for i in range(num):
+    print("유저 %d의 닉네임" %i,end=" ")
+    name.append(input())
+dic=[]
+count =0
+for i in range(4):
+    print("제시어 : ", list[i])
+    for j in range(num):
+        print(name[j],end=" ")
+        temp = input()
+        dic.append(temp)
+        count+=1
+        for k in range(count-1):
+            print(dic)
+            if temp == dic[k]:
+                print("에러")
+                exit()
+        if len(temp)==1:
+            print("에러")
+            exit()
+        if j>=1:
+            temp2 = temp[0]
+            print(temp2)
+            if temp2 != temp[-1]:
+                print("에러")
+                exit()
+        temp3 = temp[-1]  
+        print(temp3)  
+        
+        #잘안풀리네여 ㅎㅎ
+        
